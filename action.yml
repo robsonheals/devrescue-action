@@ -1,0 +1,27 @@
+name: DevRescue CI Health Check
+description: Score your GitHub Actions workflows 0-100. Flags missing caches, concurrency groups and job timeouts, with the exact line to fix.
+author: robsonheals
+branding:
+  icon: activity
+  color: purple
+inputs:
+  path:
+    description: Directory that contains .github/workflows (for monorepos or checkouts in a subfolder).
+    required: false
+    default: .
+  min-score:
+    description: Fail the job when the CI health score is below this value (0-100). 0 never fails.
+    required: false
+    default: '0'
+  annotations:
+    description: Show each finding as an annotation on the workflow file. Set to false to only print to the log.
+    required: false
+    default: 'true'
+outputs:
+  score:
+    description: CI health score, 0-100 (empty when the repository has no workflows).
+  findings:
+    description: Number of findings.
+runs:
+  using: node24
+  main: dist/index.js
