@@ -1,5 +1,5 @@
 name: DevRescue CI Health Check
-description: Score your GitHub Actions workflows 0-100. Flags missing caches, concurrency groups and job timeouts, with the exact line to fix.
+description: Score your GitHub Actions workflows 0-100: missing caches, concurrency groups and job timeouts, with the line to fix.
 author: robsonheals
 branding:
   icon: activity
