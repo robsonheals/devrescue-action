@@ -11,6 +11,10 @@ Findings show up as annotations on the workflow file and in the job summary. Eve
 
 We ran the same checks on 139 popular JS/TS repositories: [only 1 passed all three basic checks](https://devrescue.vercel.app/research).
 
+Want to try it before adding it to CI? The same engine runs on the web at [devrescue.vercel.app](https://devrescue.vercel.app): paste a public repo, no signup.
+
+![DevRescue web audit of expressjs/express: CI/CD score 64 with findings per workflow line](docs/web-audit.png)
+
 ## Usage
 
 ```yaml
